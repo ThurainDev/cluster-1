@@ -35,21 +35,28 @@ body {
 .envelope-content {
     color: white;
     padding: 20px;
-    /* --- MODIFIED LINE BELOW --- */
-    font-family: 'Poppins', sans-serif; /* Simple and Classic Font */
-    /* --------------------------- */
+    font-family: 'Poppins', Noto Sans Myanmar, sans-serif; 
 }
 
+/* ... other styles remain the same ... */
+
 .envelope-title {
-    font-size: 2.5em; /* Adjusted size slightly for the new font */
-    font-weight: 700; /* Bold */
+    /* Adjusted Size for the Longer Title ("Hey, You're Invited to Cluster 1 Christmas!") */
+    font-size: 1.8em; /* Smaller and realistic size */
+    font-weight: 700; /* Maintain bold impact */
     margin-bottom: 5px;
+    letter-spacing: 0.5px; /* Slightly tighter spacing for legibility */
+    line-height: 1.2; 
 }
 
 .envelope-subtitle {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+    /* Realistic size for the paragraph text ("Unwrap your exclusive Christmas invite") */
+    font-size: 0.95em; /* A very slightly smaller and standard size */
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 25px; 
 }
+
+/* ... rest of the CSS remains the same ... */
 
 /* ... (Button and Modal styles remain the same) ... */
 
