@@ -1,0 +1,111 @@
+/* General Christmas Vibe */
+body {
+    background-color: #e6e6e6; /* Light gray background */
+    font-family: 'Poppins', sans-serif; /* Use Poppins as general body font */
+    overflow: hidden; /* Prevent scrolling until the envelope is opened */
+}
+
+/* 🎅 Envelope Styling */
+#envelope-wrapper {
+    background-color: #c93232; /* Deep Christmas Red */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill="%23a01f1f" opacity="0.4"><rect x="0" y="0" width="50" height="50"/><rect x="50" y="50" width="50" height="50"/></g></svg>'); /* Subtle background pattern */
+    transition: opacity 1s ease-in-out;
+}
+
+.envelope-style {
+    width: 350px;
+    height: 250px;
+    background-color: #0b6623; /* Deep Christmas Green */
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+    border: 5px solid gold; /* Festive Border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.envelope-style:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.envelope-content {
+    color: white;
+    padding: 20px;
+    /* --- MODIFIED LINE BELOW --- */
+    font-family: 'Poppins', sans-serif; /* Simple and Classic Font */
+    /* --------------------------- */
+}
+
+.envelope-title {
+    font-size: 2.5em; /* Adjusted size slightly for the new font */
+    font-weight: 700; /* Bold */
+    margin-bottom: 5px;
+}
+
+.envelope-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* ... (Button and Modal styles remain the same) ... */
+
+.christmas-text {
+    /* This remains the festive font for the modal */
+    font-family: 'Great Vibes', cursive;
+    color: #c93232; /* Red text for titles */
+    text-shadow: 1px 1px 1px #0b6623;
+}
+
+/* Button Styling */
+.christmas-btn {
+    background-color: gold !important;
+    color: #c93232 !important; /* Red text */
+    border: 3px solid #c93232 !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.christmas-btn:hover {
+    background-color: white !important;
+    transform: translateY(-2px);
+}
+
+/* 🎁 Modal Styling */
+.christmas-modal-content {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 8px solid #c93232; /* Red Modal Border */
+}
+
+.modal-header {
+    background-color: #0b6623; /* Green Header */
+    color: white;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.christmas-text {
+    font-family: 'Great Vibes', cursive;
+    color: #c93232; /* Red text for titles */
+    text-shadow: 1px 1px 1px #0b6623;
+}
+
+.christmas-card {
+    background-color: #f8f9fa; /* Light background for card */
+    border: 2px dashed #0b6623; /* Dashed green border */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Forcing scrolling after envelope opens */
+body.event-open {
+    overflow-y: auto;
+    background-color: #e6e6e6; /* You can change the final background if you want */
+}
